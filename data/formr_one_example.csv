@@ -1,0 +1,373 @@
+explanations,type,optional,name,block_order,item_order,showif,label,choice1,choice2
+,get PROLIFIC_PID,,code,,,,,,
+,block,,block,,,"is.na(code) || code == """"",You have to come here through Prolific.,,
+,note,,consent,,,,"You are being invited to participate in a research study about human reasoning. This study is being conducted by Alan Jern, Ph.D., from the Department of Humanities, Social Sciences, and the Arts at Rose-Hulman Institute of Technology. There are no known risks or costs if you decide to participate in thisresearch study. In this study, you will be asked to answer a few questions or make some judgments. There are no right or wrong answers. We are only interested in whether people tend to give similar answers. The information collected may not benefit you directly, but the information learned in this study could help usto better understand how people think and reason. The data from this study will be shared publicly, but your responses will be anonymized so that they cannot be linked to your identity. Your participation in this study is voluntary and you may leave at any time. By completing the survey, you are voluntarily agreeing to participate. If you have any questions about the study, please contact Alan Jern at jern@rose-hulman.edu. If you have any questions about your rights as a research subject or if you feel you've been placed at risk, you may contact the Institutional Reviewer, Daniel Morris, by phone at (812) 877-8314, or by e-mail at morris@rose-hulman.edu. ",,
+,submit,,consent_submit,,,,Acknowledge Consent & Proceed,,
+,note,,instructions_1,,,,## Instructions,,
+,note,,instructions_2,,,,"On each page of this study, you will learn about something a person has done previously. Your task is to rate how likely you think it is that the same person will do different things in the future, given what you know about their past behavior.",,
+,note,,instructions_3,,,,There are no right or wrong answers. We only want to know whether people give similar answers.,,
+,submit,,instructions_submit,,,,Continue to Experiment,,
+,"random 1,10.0",,condition,,,,,,
+,note,,prompt_pr11,pr1,1,condition == 1,"Steven sells government secrets from his nation to another country; the information is classified, though the sale will not have any negative consequences for people in his home nation. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Steven:",,
+,"rating_button 1,7,1",,pr1sa1,pr1,2,condition == 1,...writes erotic poetry about his pet cat?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1au1,pr1,2,condition == 1,"...takes his father's car out after curfew, against his father's wishes?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1lo1,pr1,2,condition == 1,...leaves his family business to go work for their main competitor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1po1,pr1,2,condition == 1,...walks away while his conversation partner is still speaking?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1ca1,pr1,2,condition == 1,...spanks his child with a spatula for getting bad grades in school?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1li1,pr1,2,condition == 1,...is the leader of a club and bans members from wearing bright colors during club meetings?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1fa1,pr1,2,condition == 1,...pretends to be seriously fouled by an opposing player during a local game?,Very Unlikely,Very Likely
+,submit,,p1_submit_1,,,,Next Question,,
+,note,,prompt_sa11,sa1,1,condition == 1,"Maria takes part in a performance art piece in which a group of people act like animals for 30 minutes, including crawling around naked and urinating on stage. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Maria:",,
+,"rating_button 1,7,1",,sa1sa1,sa1,2,condition == 1,...marries her first cousin in an elaborate wedding?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1po1,sa1,2,condition == 1,...walks away while her conversation partner is still speaking?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1ca1,sa1,2,condition == 1,...spanks her child with a spatula for getting bad grades in school?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1li1,sa1,2,condition == 1,...is the leader of a club and bans members from wearing bright colors during club meetings?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1fa1,sa1,2,condition == 1,...bribes her landlord to be the first to get her apartment repainted?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1au1,sa1,2,condition == 1,...disobeys her boss; nothing bad happens as a result of her disobedience?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1lo1,sa1,2,condition == 1,...cheats on her spouse with an ex-lover; the spouse does not find out about the infidelity?,Very Unlikely,Very Likely
+,submit,,p2_submit_1,,,,Next Question,,
+,note,,prompt_li11,li1,1,condition == 1,"James tells his fiance that she has to switch to his political party. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that James:",,
+,"rating_button 1,7,1",,li1fa1,li1,2,condition == 1,...takes a shortcut on the course during the marathon in order to win?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1lo1,li1,2,condition == 1,...jokes about the stupidity of people from his home country?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1ca1,li1,2,condition == 1,...is driving along an empty road and sees a woman who is clearly injured; he does not stop to help her?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1po1,li1,2,condition == 1,"...bumps into someone on the street while in a rush but does not say ""excuse me""?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1sa1,li1,2,condition == 1,"...takes part in a performance art piece in which a group of people act like animals for 30 minutes, including crawling around naked and urinating on stage?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1au1,li1,2,condition == 1,...talks loudly in class while the instructor is teaching?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1li1,li1,2,condition == 1,...pressures his daughter to become a famous evening news anchor?,Very Unlikely,Very Likely
+,submit,,p3_submit_1,,,,Next Question,,
+,note,,attention_check_instructions_1,,,condition == 1,This question is solely intended to be an attention check. Please respond by selecting the number 1 for all the prompts below. You may ignore the text preceding the number options. ,,
+,"rating_button 1,7,1",,attention_0_1,,,condition == 1,...tries to undermine all of her boss's ideas in front of others?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_1_1,,,condition == 1,"...sends out an email to other employees at her company, calling their company president an ""idiot""?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_2_1,,,condition == 1,...shoots geese repeatedly with a pellet gun out in the woods?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_3_1,,,condition == 1,...talks loudly and interrupts the mayor's speech to the public?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_4_1,,,condition == 1,"...hires her nephew for a job, instead of a more qualified applicant?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_5_1,,,condition == 1,...plays music through her headphones so loudly that other passengers can hear it while on a bus?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_6_1,,,condition == 1,...tells her romantic partner that he must convert to her religion?,Very Unlikely,Very Likely
+,submit,,attention_submit_1,,,condition == 1,Next Question,,
+,note,,prompt_pr12,pr1,1,condition == 2,"Steven disobeys his boss; nothing bad happens as a result of his disobedience. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Steven:",,
+,"rating_button 1,7,1",,pr1lo2,pr1,2,condition == 2,...leaves his family business to go work for their main competitor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1li2,pr1,2,condition == 2,...imposes a curfew on all members of his immediate family?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1sa2,pr1,2,condition == 2,...marries his first cousin in an elaborate wedding?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1ca2,pr1,2,condition == 2,...tells a woman that her painting looks like it was done by children?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1fa2,pr1,2,condition == 2,...takes a shortcut on the course during the marathon in order to win?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1au2,pr1,2,condition == 2,"...sends out an email to other employees at his company, calling their company president an ""idiot""?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1po2,pr1,2,condition == 2,...walks away while his conversation partner is still speaking?,Very Unlikely,Very Likely
+,submit,,p1_submit_2,,,,Next Question,,
+,note,,prompt_sa12,sa1,1,condition == 2,"Maria looks at pornography in which an 18-year-old model has been digitally altered to look like he is 13. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Maria:",,
+,"rating_button 1,7,1",,sa1po2,sa1,2,condition == 2,...goes to a birthday party for her friend but does not bring a gift?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1sa2,sa1,2,condition == 2,"...takes part in a performance art piece in which a group of people act like animals for 30 minutes, including crawling around naked and urinating on stage?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1au2,sa1,2,condition == 2,...talks loudly and interrupts the mayor's speech to the public?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1lo2,sa1,2,condition == 2,"...sells government secrets from her nation to another country; the information is classified, though the sale will not have any negative consequences for people in their home nation?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1fa2,sa1,2,condition == 2,"...requires all her employees to split their bonuses evenly, even though some earn larger bonuses than others?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1ca2,sa1,2,condition == 2,...laughs when she realizes her friend's dad is a janitor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1li2,sa1,2,condition == 2,...forces her daughter to enroll as a pre-med student in college?,Very Unlikely,Very Likely
+,submit,,p2_submit_2,,,,Next Question,,
+,note,,prompt_li12,li1,1,condition == 2,"James tells his fiance that she has to switch to his political party. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that James:",,
+,"rating_button 1,7,1",,li1po2,li1,2,condition == 2,"...bumps into someone on the street while in a rush but does not say ""excuse me""?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1au2,li1,2,condition == 2,...disobeys his boss; nothing bad happens as a result of his disobedience?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1lo2,li1,2,condition == 2,"...gets a job in a foreign nation where his home country is viewed fairly negatively; in order to fit in among their coworkers, James makes critical comments about their home country, though James does not believe them?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1li2,li1,2,condition == 2,...is the leader of a club and bans members from wearing bright colors during club meetings?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1fa2,li1,2,condition == 2,...edges out another person in a long line?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1ca2,li1,2,condition == 2,...shoots geese repeatedly with a pellet gun out in the woods?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1sa2,li1,2,condition == 2,...marries his first cousin in an elaborate wedding?,Very Unlikely,Very Likely
+,submit,,p3_submit_2,,,,Next Question,,
+,note,,attention_check_instructions_2,,,condition == 2,This question is solely intended to be an attention check. Please respond by selecting the number 1 for all the prompts below. You may ignore the text preceding the number options. ,,
+,"rating_button 1,7,1",,attention_0_2,,,condition == 2,"...takes part in a performance art piece in which a group of people act like animals for 30 minutes, including crawling around naked and urinating on stage?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_1_2,,,condition == 2,...searches through the trash to find women's discarded underwear?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_2_2,,,condition == 2,...plays music through her headphones so loudly that other passengers can hear it while on a bus?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_3_2,,,condition == 2,...takes a shortcut on the course during the marathon in order to win?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_4_2,,,condition == 2,...bribes her landlord to be the first to get her apartment repainted?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_5_2,,,condition == 2,"...hires her nephew for a job, instead of a more qualified applicant?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_6_2,,,condition == 2,...makes fun of her brother for getting dumped by his girlfriend?,Very Unlikely,Very Likely
+,submit,,attention_submit_2,,,condition == 2,Next Question,,
+,note,,prompt_pr13,pr1,1,condition == 3,"Steven sells government secrets from his nation to another country; the information is classified, though the sale will not have any negative consequences for people in his home nation. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Steven:",,
+,"rating_button 1,7,1",,pr1ca3,pr1,2,condition == 3,...laughs when he realizes his friend's dad is a janitor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1fa3,pr1,2,condition == 3,...takes a shortcut on the course during the marathon in order to win?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1po3,pr1,2,condition == 3,...walks away while his conversation partner is still speaking?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1au3,pr1,2,condition == 3,...talks loudly in class while the instructor is teaching?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1sa3,pr1,2,condition == 3,...writes erotic poetry about his pet cat?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1li3,pr1,2,condition == 3,...tells his fiance that she has to switch to his political party?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1lo3,pr1,2,condition == 3,"...gets a job in a foreign nation where his home country is viewed fairly negatively; in order to fit in among their coworkers, Steven makes critical comments about their home country, though Steven does not believe them?",Very Unlikely,Very Likely
+,submit,,p1_submit_3,,,,Next Question,,
+,note,,prompt_sa13,sa1,1,condition == 3,"Maria looks at pornography in which an 18-year-old model has been digitally altered to look like he is 13. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Maria:",,
+,"rating_button 1,7,1",,sa1sa3,sa1,2,condition == 3,...searches through the trash to find women's discarded underwear?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1lo3,sa1,2,condition == 3,...celebrates with the opposing team's players who just won the game?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1au3,sa1,2,condition == 3,...has a long and loud conversation with a group of friends during a religious service?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1li3,sa1,2,condition == 3,...tells her romantic partner that he must convert to her religion?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1fa3,sa1,2,condition == 3,...skips to the front of the line because her friend is an employee?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1po3,sa1,2,condition == 3,...eats a T-bone steak with her hands in a fancy restaurant?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1ca3,sa1,2,condition == 3,...is driving along an empty road and sees a man who is clearly injured; she does not stop to help him?,Very Unlikely,Very Likely
+,submit,,p2_submit_3,,,,Next Question,,
+,note,,prompt_li13,li1,1,condition == 3,"James imposes a curfew on all members of his immediate family. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that James:",,
+,"rating_button 1,7,1",,li1ca3,li1,2,condition == 3,...tells a boy that his older brother is much more attractive than him?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1po3,li1,2,condition == 3,...plays music through his headphones so loudly that other passengers can hear it while on a bus?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1au3,li1,2,condition == 3,...tries to undermine all of his boss's ideas in front of others?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1fa3,li1,2,condition == 3,...pretends to be seriously fouled by an opposing player during a local game?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1lo3,li1,2,condition == 3,...shares a secret that his best friend entrusted to him; the secret is not damaging or embarrassing in any way and the friend never finds out that their secret has been shared?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1li3,li1,2,condition == 3,...tells his fiance that she has to switch to his political party?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1sa3,li1,2,condition == 3,...looks at pornography in which an 18-year-old model has been digitally altered to look like she is 13?,Very Unlikely,Very Likely
+,submit,,p3_submit_3,,,,Next Question,,
+,note,,attention_check_instructions_3,,,condition == 3,This question is solely intended to be an attention check. Please respond by selecting the number 1 for all the prompts below. You may ignore the text preceding the number options. ,,
+,"rating_button 1,7,1",,attention_0_3,,,condition == 3,...makes fun of her brother for getting dumped by his girlfriend?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_1_3,,,condition == 3,...laughs when she realizes her friend's dad is a janitor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_2_3,,,condition == 3,"...sends out an email to other employees at her company, calling their company president an ""idiot""?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_3_3,,,condition == 3,"...hires her nephew for a job, instead of a more qualified applicant?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_4_3,,,condition == 3,...leaves her family business to go work for their main competitor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_5_3,,,condition == 3,...cheats on her spouse with an ex-lover; the spouse does not find out about the infidelity?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_6_3,,,condition == 3,"...bumps into someone on the street while in a rush but does not say ""excuse me""?",Very Unlikely,Very Likely
+,submit,,attention_submit_3,,,condition == 3,Next Question,,
+,note,,prompt_pr14,pr1,1,condition == 4,"Steven bumps into someone on the street while in a rush but does not say ""excuse me"". Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Steven:",,
+,"rating_button 1,7,1",,pr1sa4,pr1,2,condition == 4,...eats the flesh of a deceased relative as part of a group funeral rite?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1au4,pr1,2,condition == 4,...talks loudly and interrupts the mayor's speech to the public?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1lo4,pr1,2,condition == 4,...celebrates with the opposing team's players who just won the game?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1ca4,pr1,2,condition == 4,...tells a boy that his older brother is much more attractive than him?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1fa4,pr1,2,condition == 4,...skips to the front of the line because his friend is an employee?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1li4,pr1,2,condition == 4,...tells his fiance that she has to switch to his political party?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1po4,pr1,2,condition == 4,...eats a T-bone steak with his hands in a fancy restaurant?,Very Unlikely,Very Likely
+,submit,,p1_submit_4,,,,Next Question,,
+,note,,prompt_sa14,sa1,1,condition == 4,"Maria looks at pornography in which an 18-year-old model has been digitally altered to look like he is 13. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Maria:",,
+,"rating_button 1,7,1",,sa1sa4,sa1,2,condition == 4,...eats the flesh of a deceased relative as part of a group funeral rite?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1au4,sa1,2,condition == 4,...talks loudly in class while the instructor is teaching?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1po4,sa1,2,condition == 4,...walks away while her conversation partner is still speaking?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1li4,sa1,2,condition == 4,...forces her daughter to enroll as a pre-med student in college?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1ca4,sa1,2,condition == 4,...laughs when she realizes her friend's dad is a janitor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1lo4,sa1,2,condition == 4,...leaves her family business to go work for their main competitor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1fa4,sa1,2,condition == 4,"...hires her nephew for a job, instead of a more qualified applicant?",Very Unlikely,Very Likely
+,submit,,p2_submit_4,,,,Next Question,,
+,note,,prompt_li14,li1,1,condition == 4,"James pressures his daughter to become a famous evening news anchor. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that James:",,
+,"rating_button 1,7,1",,li1lo4,li1,2,condition == 4,...shares a secret that his best friend entrusted to him; the secret is not damaging or embarrassing in any way and the friend never finds out that their secret has been shared?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1fa4,li1,2,condition == 4,...takes a shortcut on the course during the marathon in order to win?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1po4,li1,2,condition == 4,...walks away while his conversation partner is still speaking?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1sa4,li1,2,condition == 4,...marries his first cousin in an elaborate wedding?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1au4,li1,2,condition == 4,"...takes his father's car out after curfew, against his father's wishes?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1ca4,li1,2,condition == 4,...shoots geese repeatedly with a pellet gun out in the woods?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1li4,li1,2,condition == 4,...tells his romantic partner that she must convert to his religion?,Very Unlikely,Very Likely
+,submit,,p3_submit_4,,,,Next Question,,
+,note,,attention_check_instructions_4,,,condition == 4,This question is solely intended to be an attention check. Please respond by selecting the number 1 for all the prompts below. You may ignore the text preceding the number options. ,,
+,"rating_button 1,7,1",,attention_0_4,,,condition == 4,...has a long and loud conversation with a group of friends during a religious service?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_1_4,,,condition == 4,"...gets a job in a foreign nation where her home country is viewed fairly negatively; in order to fit in among their coworkers, :: makes critical comments about their home country, though :: does not believe them?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_2_4,,,condition == 4,...looks at pornography in which an 18-year-old model has been digitally altered to look like he is 13?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_3_4,,,condition == 4,...writes erotic poetry about her pet cat?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_4_4,,,condition == 4,"...bumps into someone on the street while in a rush but does not say ""excuse me""?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_5_4,,,condition == 4,...spanks her child with a spatula for getting bad grades in school?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_6_4,,,condition == 4,...eats a T-bone steak with her hands in a fancy restaurant?,Very Unlikely,Very Likely
+,submit,,attention_submit_4,,,condition == 4,Next Question,,
+,note,,prompt_pr15,pr1,1,condition == 5,"Steven edges out another person in a long line. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Steven:",,
+,"rating_button 1,7,1",,pr1au5,pr1,2,condition == 5,...has a long and loud conversation with a group of friends during a religious service?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1po5,pr1,2,condition == 5,...tries to change the subject of conversation in the middle of his friend's sentence?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1fa5,pr1,2,condition == 5,...takes a shortcut on the course during the marathon in order to win?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1sa5,pr1,2,condition == 5,...writes erotic poetry about his pet cat?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1ca5,pr1,2,condition == 5,...is driving along an empty road and sees a woman who is clearly injured; he does not stop to help her?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1lo5,pr1,2,condition == 5,...jokes about the stupidity of people from his home country?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1li5,pr1,2,condition == 5,...is the leader of a club and tries to ban the wearing of hooded sweatshirts to club meetings?,Very Unlikely,Very Likely
+,submit,,p1_submit_5,,,,Next Question,,
+,note,,prompt_sa15,sa1,1,condition == 5,"Maria looks at pornography in which an 18-year-old model has been digitally altered to look like he is 13. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Maria:",,
+,"rating_button 1,7,1",,sa1fa5,sa1,2,condition == 5,...bribes her landlord to be the first to get her apartment repainted?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1au5,sa1,2,condition == 5,...talks loudly in class while the instructor is teaching?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1sa5,sa1,2,condition == 5,...writes erotic poetry about her pet cat?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1li5,sa1,2,condition == 5,...tells her romantic partner that he must convert to her religion?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1po5,sa1,2,condition == 5,...tries to change the subject of conversation in the middle of her friend's sentence?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1lo5,sa1,2,condition == 5,...shares a secret that her best friend entrusted to her; the secret is not damaging or embarrassing in any way and the friend never finds out that their secret has been shared?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1ca5,sa1,2,condition == 5,...spanks her child with a spatula for getting bad grades in school?,Very Unlikely,Very Likely
+,submit,,p2_submit_5,,,,Next Question,,
+,note,,prompt_li15,li1,1,condition == 5,"James pressures his daughter to become a famous evening news anchor. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that James:",,
+,"rating_button 1,7,1",,li1po5,li1,2,condition == 5,...goes to a birthday party for his friend but does not bring a gift?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1sa5,li1,2,condition == 5,"...takes part in a performance art piece in which a group of people act like animals for 30 minutes, including crawling around naked and urinating on stage?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1ca5,li1,2,condition == 5,...tells a boy that his older brother is much more attractive than him?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1lo5,li1,2,condition == 5,...leaves his family business to go work for their main competitor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1li5,li1,2,condition == 5,...tells his fiance that she has to switch to his political party?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1fa5,li1,2,condition == 5,...bribes his landlord to be the first to get his apartment repainted?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1au5,li1,2,condition == 5,"...takes his father's car out after curfew, against his father's wishes?",Very Unlikely,Very Likely
+,submit,,p3_submit_5,,,,Next Question,,
+,note,,attention_check_instructions_5,,,condition == 5,This question is solely intended to be an attention check. Please respond by selecting the number 1 for all the prompts below. You may ignore the text preceding the number options. ,,
+,"rating_button 1,7,1",,attention_0_5,,,condition == 5,"...requires all her employees to split their bonuses evenly, even though some earn larger bonuses than others?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_1_5,,,condition == 5,...skips to the front of the line because her friend is an employee?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_2_5,,,condition == 5,...disobeys her boss; nothing bad happens as a result of her disobedience?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_3_5,,,condition == 5,...writes erotic poetry about her pet cat?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_4_5,,,condition == 5,...tells a woman that her painting looks like it was done by children?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_5_5,,,condition == 5,...celebrates with the opposing team's players who just won the game?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_6_5,,,condition == 5,...searches through the trash to find women's discarded underwear?,Very Unlikely,Very Likely
+,submit,,attention_submit_5,,,condition == 5,Next Question,,
+,note,,prompt_pr16,pr1,1,condition == 6,"Steven walks away while his conversation partner is still speaking. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Steven:",,
+,"rating_button 1,7,1",,pr1li6,pr1,2,condition == 6,...forces his daughter to enroll as a pre-med student in college?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1ca6,pr1,2,condition == 6,...shoots geese repeatedly with a pellet gun out in the woods?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1au6,pr1,2,condition == 6,...disobeys his boss; nothing bad happens as a result of his disobedience?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1fa6,pr1,2,condition == 6,...skips to the front of the line because his friend is an employee?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1po6,pr1,2,condition == 6,"...bumps into someone on the street while in a rush but does not say ""excuse me""?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1lo6,pr1,2,condition == 6,"...gets a job in a foreign nation where his home country is viewed fairly negatively; in order to fit in among their coworkers, Steven makes critical comments about their home country, though Steven does not believe them?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1sa6,pr1,2,condition == 6,...eats the flesh of a deceased relative as part of a group funeral rite?,Very Unlikely,Very Likely
+,submit,,p1_submit_6,,,,Next Question,,
+,note,,prompt_sa16,sa1,1,condition == 6,"Maria marries her first cousin in an elaborate wedding. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Maria:",,
+,"rating_button 1,7,1",,sa1ca6,sa1,2,condition == 6,...tells a boy that his older brother is much more attractive than him?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1fa6,sa1,2,condition == 6,"...hires her nephew for a job, instead of a more qualified applicant?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1lo6,sa1,2,condition == 6,...celebrates with the opposing team's players who just won the game?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1au6,sa1,2,condition == 6,...tries to undermine all of her boss's ideas in front of others?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1li6,sa1,2,condition == 6,...is the leader of a club and bans members from wearing bright colors during club meetings?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1po6,sa1,2,condition == 6,"...bumps into someone on the street while in a rush but does not say ""excuse me""?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1sa6,sa1,2,condition == 6,...eats the flesh of a deceased relative as part of a group funeral rite?,Very Unlikely,Very Likely
+,submit,,p2_submit_6,,,,Next Question,,
+,note,,prompt_li16,li1,1,condition == 6,"James is the leader of a club and tries to ban the wearing of hooded sweatshirts to club meetings. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that James:",,
+,"rating_button 1,7,1",,li1fa6,li1,2,condition == 6,...pretends to be seriously fouled by an opposing player during a local game?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1au6,li1,2,condition == 6,"...sends out an email to other employees at his company, calling their company president an ""idiot""?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1lo6,li1,2,condition == 6,...leaves his family business to go work for their main competitor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1po6,li1,2,condition == 6,...plays music through his headphones so loudly that other passengers can hear it while on a bus?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1li6,li1,2,condition == 6,...forces his daughter to enroll as a pre-med student in college?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1ca6,li1,2,condition == 6,...spanks his child with a spatula for getting bad grades in school?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1sa6,li1,2,condition == 6,...searches through the trash to find women's discarded underwear?,Very Unlikely,Very Likely
+,submit,,p3_submit_6,,,,Next Question,,
+,note,,attention_check_instructions_6,,,condition == 6,This question is solely intended to be an attention check. Please respond by selecting the number 1 for all the prompts below. You may ignore the text preceding the number options. ,,
+,"rating_button 1,7,1",,attention_0_6,,,condition == 6,...tells a boy that his older brother is much more attractive than him?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_1_6,,,condition == 6,...eats the flesh of a deceased relative as part of a group funeral rite?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_2_6,,,condition == 6,...laughs when she realizes her friend's dad is a janitor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_3_6,,,condition == 6,...disobeys her boss; nothing bad happens as a result of her disobedience?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_4_6,,,condition == 6,...walks away while her conversation partner is still speaking?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_5_6,,,condition == 6,...writes erotic poetry about her pet cat?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_6_6,,,condition == 6,...bribes her landlord to be the first to get her apartment repainted?,Very Unlikely,Very Likely
+,submit,,attention_submit_6,,,condition == 6,Next Question,,
+,note,,prompt_pr17,pr1,1,condition == 7,"Steven skips to the front of the line because his friend is an employee. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Steven:",,
+,"rating_button 1,7,1",,pr1ca7,pr1,2,condition == 7,...is driving along an empty road and sees a woman who is clearly injured; he does not stop to help her?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1li7,pr1,2,condition == 7,...is the leader of a club and tries to ban the wearing of hooded sweatshirts to club meetings?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1fa7,pr1,2,condition == 7,...takes a shortcut on the course during the marathon in order to win?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1po7,pr1,2,condition == 7,...ignores his personal hygiene and mental health in order to devote more time to his career?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1au7,pr1,2,condition == 7,...tries to undermine all of his boss's ideas in front of others?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1lo7,pr1,2,condition == 7,...leaves his family business to go work for their main competitor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1sa7,pr1,2,condition == 7,...searches through the trash to find women's discarded underwear?,Very Unlikely,Very Likely
+,submit,,p1_submit_7,,,,Next Question,,
+,note,,prompt_sa17,sa1,1,condition == 7,"Maria looks at pornography in which an 18-year-old model has been digitally altered to look like he is 13. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Maria:",,
+,"rating_button 1,7,1",,sa1ca7,sa1,2,condition == 7,...makes fun of her brother for getting dumped by his girlfriend?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1au7,sa1,2,condition == 7,"...takes her father's car out after curfew, against his wishes?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1sa7,sa1,2,condition == 7,...writes erotic poetry about her pet cat?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1po7,sa1,2,condition == 7,...walks away while her conversation partner is still speaking?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1fa7,sa1,2,condition == 7,...takes a shortcut on the course during the marathon in order to win?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1li7,sa1,2,condition == 7,...pressures her daughter to become a famous evening news anchor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1lo7,sa1,2,condition == 7,"...sells government secrets from her nation to another country; the information is classified, though the sale will not have any negative consequences for people in their home nation?",Very Unlikely,Very Likely
+,submit,,p2_submit_7,,,,Next Question,,
+,note,,prompt_li17,li1,1,condition == 7,"James is the leader of a club and tries to ban the wearing of hooded sweatshirts to club meetings. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that James:",,
+,"rating_button 1,7,1",,li1li7,li1,2,condition == 7,...pressures his daughter to become a famous evening news anchor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1po7,li1,2,condition == 7,...ignores his personal hygiene and mental health in order to devote more time to his career?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1ca7,li1,2,condition == 7,...tells a woman that her painting looks like it was done by children?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1au7,li1,2,condition == 7,...tries to undermine all of his boss's ideas in front of others?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1fa7,li1,2,condition == 7,"...requires all his employees to split their bonuses evenly, even though some earn larger bonuses than others?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1lo7,li1,2,condition == 7,...cheats on his spouse with an ex-lover; his spouse does not find out about the infidelity?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1sa7,li1,2,condition == 7,...looks at pornography in which an 18-year-old model has been digitally altered to look like she is 13?,Very Unlikely,Very Likely
+,submit,,p3_submit_7,,,,Next Question,,
+,note,,attention_check_instructions_7,,,condition == 7,This question is solely intended to be an attention check. Please respond by selecting the number 1 for all the prompts below. You may ignore the text preceding the number options. ,,
+,"rating_button 1,7,1",,attention_0_7,,,condition == 7,"...sells government secrets from her nation to another country; the information is classified, though the sale will not have any negative consequences for people in their home nation?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_1_7,,,condition == 7,...talks loudly in class while the instructor is teaching?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_2_7,,,condition == 7,...jokes about the stupidity of people from her home country?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_3_7,,,condition == 7,"...takes her father's car out after curfew, against his wishes?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_4_7,,,condition == 7,...takes a shortcut on the course during the marathon in order to win?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_5_7,,,condition == 7,...walks away while her conversation partner is still speaking?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_6_7,,,condition == 7,...tells her fiance that he has to switch to her political party?,Very Unlikely,Very Likely
+,submit,,attention_submit_7,,,condition == 7,Next Question,,
+,note,,prompt_pr18,pr1,1,condition == 8,"Steven bribes his landlord to be the first to get his apartment repainted. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Steven:",,
+,"rating_button 1,7,1",,pr1li8,pr1,2,condition == 8,...tells his romantic partner that she must convert to his religion?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1lo8,pr1,2,condition == 8,...jokes about the stupidity of people from his home country?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1sa8,pr1,2,condition == 8,"...takes part in a performance art piece in which a group of people act like animals for 30 minutes, including crawling around naked and urinating on stage?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1po8,pr1,2,condition == 8,...ignores his personal hygiene and mental health in order to devote more time to his career?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1ca8,pr1,2,condition == 8,...shoots geese repeatedly with a pellet gun out in the woods?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1fa8,pr1,2,condition == 8,"...hires his nephew for a job, instead of a more qualified applicant?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1au8,pr1,2,condition == 8,"...sends out an email to other employees at his company, calling their company president an ""idiot""?",Very Unlikely,Very Likely
+,submit,,p1_submit_8,,,,Next Question,,
+,note,,prompt_sa18,sa1,1,condition == 8,"Maria searches through the trash to find women's discarded underwear. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Maria:",,
+,"rating_button 1,7,1",,sa1au8,sa1,2,condition == 8,...talks loudly in class while the instructor is teaching?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1sa8,sa1,2,condition == 8,...offers to have oral sex with anyone in the bar while drunk?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1fa8,sa1,2,condition == 8,...bribes her landlord to be the first to get her apartment repainted?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1li8,sa1,2,condition == 8,...tells her fiance that he has to switch to her political party?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1po8,sa1,2,condition == 8,...walks away while her conversation partner is still speaking?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1ca8,sa1,2,condition == 8,...tells a boy that his older brother is much more attractive than him?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1lo8,sa1,2,condition == 8,...jokes about the stupidity of people from her home country?,Very Unlikely,Very Likely
+,submit,,p2_submit_8,,,,Next Question,,
+,note,,prompt_li18,li1,1,condition == 8,"James is the leader of a club and bans members from wearing bright colors during club meetings. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that James:",,
+,"rating_button 1,7,1",,li1au8,li1,2,condition == 8,"...takes his father's car out after curfew, against his father's wishes?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1ca8,li1,2,condition == 8,...makes fun of his brother for getting dumped by his girlfriend?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1lo8,li1,2,condition == 8,...leaves his family business to go work for their main competitor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1po8,li1,2,condition == 8,...plays music through his headphones so loudly that other passengers can hear it while on a bus?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1li8,li1,2,condition == 8,...tells his romantic partner that she must convert to his religion?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1sa8,li1,2,condition == 8,...eats the flesh of a deceased relative as part of a group funeral rite?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1fa8,li1,2,condition == 8,...pretends to be seriously fouled by an opposing player during a local game?,Very Unlikely,Very Likely
+,submit,,p3_submit_8,,,,Next Question,,
+,note,,attention_check_instructions_8,,,condition == 8,This question is solely intended to be an attention check. Please respond by selecting the number 1 for all the prompts below. You may ignore the text preceding the number options. ,,
+,"rating_button 1,7,1",,attention_0_8,,,condition == 8,...searches through the trash to find women's discarded underwear?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_1_8,,,condition == 8,...cheats on her spouse with an ex-lover; the spouse does not find out about the infidelity?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_2_8,,,condition == 8,...pressures her daughter to become a famous evening news anchor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_3_8,,,condition == 8,...is the leader of a club and tries to ban the wearing of hooded sweatshirts to club meetings?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_4_8,,,condition == 8,...looks at pornography in which an 18-year-old model has been digitally altered to look like he is 13?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_5_8,,,condition == 8,...eats a T-bone steak with her hands in a fancy restaurant?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_6_8,,,condition == 8,...tries to undermine all of her boss's ideas in front of others?,Very Unlikely,Very Likely
+,submit,,attention_submit_8,,,condition == 8,Next Question,,
+,note,,prompt_pr19,pr1,1,condition == 9,"Steven leaves his family business to go work for their main competitor. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Steven:",,
+,"rating_button 1,7,1",,pr1po9,pr1,2,condition == 9,...ignores his personal hygiene and mental health in order to devote more time to his career?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1ca9,pr1,2,condition == 9,...is driving along an empty road and sees a woman who is clearly injured; he does not stop to help her?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1fa9,pr1,2,condition == 9,...skips to the front of the line because his friend is an employee?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1au9,pr1,2,condition == 9,...tries to undermine all of his boss's ideas in front of others?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1li9,pr1,2,condition == 9,...is the leader of a club and bans members from wearing bright colors during club meetings?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1sa9,pr1,2,condition == 9,...eats the flesh of a deceased relative as part of a group funeral rite?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1lo9,pr1,2,condition == 9,...cheats on his spouse with an ex-lover; his spouse does not find out about the infidelity?,Very Unlikely,Very Likely
+,submit,,p1_submit_9,,,,Next Question,,
+,note,,prompt_sa19,sa1,1,condition == 9,"Maria writes erotic poetry about her pet cat. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Maria:",,
+,"rating_button 1,7,1",,sa1po9,sa1,2,condition == 9,...tries to change the subject of conversation in the middle of her friend's sentence?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1fa9,sa1,2,condition == 9,"...requires all her employees to split their bonuses evenly, even though some earn larger bonuses than others?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1sa9,sa1,2,condition == 9,...searches through the trash to find women's discarded underwear?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1li9,sa1,2,condition == 9,...pressures her daughter to become a famous evening news anchor?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1lo9,sa1,2,condition == 9,"...sells government secrets from her nation to another country; the information is classified, though the sale will not have any negative consequences for people in their home nation?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1au9,sa1,2,condition == 9,"...takes her father's car out after curfew, against his wishes?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1ca9,sa1,2,condition == 9,...laughs when she realizes her friend's dad is a janitor?,Very Unlikely,Very Likely
+,submit,,p2_submit_9,,,,Next Question,,
+,note,,prompt_li19,li1,1,condition == 9,"James is the leader of a club and bans members from wearing bright colors during club meetings. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that James:",,
+,"rating_button 1,7,1",,li1au9,li1,2,condition == 9,"...takes his father's car out after curfew, against his father's wishes?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1fa9,li1,2,condition == 9,"...requires all his employees to split their bonuses evenly, even though some earn larger bonuses than others?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1po9,li1,2,condition == 9,...goes to a birthday party for his friend but does not bring a gift?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1ca9,li1,2,condition == 9,...is driving along an empty road and sees a woman who is clearly injured; he does not stop to help her?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1sa9,li1,2,condition == 9,...offers to have oral sex with anyone in the bar while drunk?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1li9,li1,2,condition == 9,...tells his romantic partner that she must convert to his religion?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1lo9,li1,2,condition == 9,...leaves his family business to go work for their main competitor?,Very Unlikely,Very Likely
+,submit,,p3_submit_9,,,,Next Question,,
+,note,,attention_check_instructions_9,,,condition == 9,This question is solely intended to be an attention check. Please respond by selecting the number 1 for all the prompts below. You may ignore the text preceding the number options. ,,
+,"rating_button 1,7,1",,attention_0_9,,,condition == 9,...makes fun of her brother for getting dumped by his girlfriend?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_1_9,,,condition == 9,...talks loudly and interrupts the mayor's speech to the public?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_2_9,,,condition == 9,"...bumps into someone on the street while in a rush but does not say ""excuse me""?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_3_9,,,condition == 9,...eats a T-bone steak with her hands in a fancy restaurant?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_4_9,,,condition == 9,...tells a woman that her painting looks like it was done by children?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_5_9,,,condition == 9,...shares a secret that her best friend entrusted to her; the secret is not damaging or embarrassing in any way and the friend never finds out that their secret has been shared?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_6_9,,,condition == 9,"...takes part in a performance art piece in which a group of people act like animals for 30 minutes, including crawling around naked and urinating on stage?",Very Unlikely,Very Likely
+,submit,,attention_submit_9,,,condition == 9,Next Question,,
+,note,,prompt_pr110,pr1,1,condition == 10,"Steven plays music through his headphones so loudly that other passengers can hear it while on a bus. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Steven:",,
+,"rating_button 1,7,1",,pr1sa10,pr1,2,condition == 10,...writes erotic poetry about his pet cat?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1fa10,pr1,2,condition == 10,...skips to the front of the line because his friend is an employee?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1ca10,pr1,2,condition == 10,...spanks his child with a spatula for getting bad grades in school?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1po10,pr1,2,condition == 10,...tries to change the subject of conversation in the middle of his friend's sentence?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1au10,pr1,2,condition == 10,...disobeys his boss; nothing bad happens as a result of his disobedience?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1li10,pr1,2,condition == 10,...forces his daughter to enroll as a pre-med student in college?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,pr1lo10,pr1,2,condition == 10,...shares a secret that his best friend entrusted to him; the secret is not damaging or embarrassing in any way and the friend never finds out that their secret has been shared?,Very Unlikely,Very Likely
+,submit,,p1_submit_10,,,,Next Question,,
+,note,,prompt_sa110,sa1,1,condition == 10,"Maria eats the flesh of a deceased relative as part of a group funeral rite. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that Maria:",,
+,"rating_button 1,7,1",,sa1li10,sa1,2,condition == 10,...tells her romantic partner that he must convert to her religion?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1lo10,sa1,2,condition == 10,"...sells government secrets from her nation to another country; the information is classified, though the sale will not have any negative consequences for people in their home nation?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1fa10,sa1,2,condition == 10,...edges out another person in a long line?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1sa10,sa1,2,condition == 10,...writes erotic poetry about her pet cat?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1po10,sa1,2,condition == 10,...ignores her personal hygiene and mental health in order to devote more time to her career?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1au10,sa1,2,condition == 10,...talks loudly in class while the instructor is teaching?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,sa1ca10,sa1,2,condition == 10,...tells a woman that her painting looks like it was done by children?,Very Unlikely,Very Likely
+,submit,,p2_submit_10,,,,Next Question,,
+,note,,prompt_li110,li1,1,condition == 10,"James pressures his daughter to become a famous evening news anchor. Given this information, how likely (1 - very unlikely to 7 - very likely) is it that James:",,
+,"rating_button 1,7,1",,li1sa10,li1,2,condition == 10,...eats the flesh of a deceased relative as part of a group funeral rite?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1lo10,li1,2,condition == 10,"...sells government secrets from his nation to another country; the information is classified, though the sale will not have any negative consequences for people in his home nation?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1fa10,li1,2,condition == 10,...edges out another person in a long line?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1au10,li1,2,condition == 10,"...sends out an email to other employees at his company, calling their company president an ""idiot""?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1ca10,li1,2,condition == 10,...tells a boy that his older brother is much more attractive than him?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1po10,li1,2,condition == 10,...plays music through his headphones so loudly that other passengers can hear it while on a bus?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,li1li10,li1,2,condition == 10,...imposes a curfew on all members of his immediate family?,Very Unlikely,Very Likely
+,submit,,p3_submit_10,,,,Next Question,,
+,note,,attention_check_instructions_10,,,condition == 10,This question is solely intended to be an attention check. Please respond by selecting the number 1 for all the prompts below. You may ignore the text preceding the number options. ,,
+,"rating_button 1,7,1",,attention_0_10,,,condition == 10,...shares a secret that her best friend entrusted to her; the secret is not damaging or embarrassing in any way and the friend never finds out that their secret has been shared?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_1_10,,,condition == 10,"...takes part in a performance art piece in which a group of people act like animals for 30 minutes, including crawling around naked and urinating on stage?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_2_10,,,condition == 10,...has a long and loud conversation with a group of friends during a religious service?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_3_10,,,condition == 10,...talks loudly and interrupts the mayor's speech to the public?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_4_10,,,condition == 10,"...hires her nephew for a job, instead of a more qualified applicant?",Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_5_10,,,condition == 10,...takes a shortcut on the course during the marathon in order to win?,Very Unlikely,Very Likely
+,"rating_button 1,7,1",,attention_6_10,,,condition == 10,...marries her first cousin in an elaborate wedding?,Very Unlikely,Very Likely
+,submit,,attention_submit_10,,,condition == 10,Next Question,,
+,note,,feedback_instructions,,,,"Thank you for your participation in this experiment! If there is anything you found confusing about the experiment, please make a note about it below. This section is optional. ",,
+,text 500,*,feedback_text,,,,,,
+,submit,,survey_submit,,,,Submit Responses,,
